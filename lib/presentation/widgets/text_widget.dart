@@ -1,22 +1,28 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
-class TextWidget extends StatelessWidget {
-  const TextWidget(
+class HeadingWidget extends StatelessWidget {
+  const HeadingWidget(
     this.text, {
     super.key,
     this.fontsize = FontSizes.regular,
     this.weight = FontWeight.w300,
+    this.textAlign,
   });
   final String text;
   final double fontsize;
   final FontWeight weight;
+  final TextAlign? textAlign;
 
   @override
   Widget build(BuildContext context) {
     return Text(
       text,
-      style: GoogleFonts.merriweather(fontSize: fontsize, fontWeight: weight),
+      style: TextStyle(
+        fontFamily: 'Merchant',
+        fontSize: fontsize,
+        fontWeight: weight,
+      ),
+      textAlign: textAlign,
     );
   }
 }
