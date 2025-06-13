@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class AppTypography {
+class AppFonts {
   static const TextStyle h1 = TextStyle(
     fontFamily: 'Merchant',
     fontSize: 32,

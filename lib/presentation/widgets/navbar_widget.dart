@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:percent_indicator/circular_percent_indicator.dart';
+import 'package:polizen_app/presentation/widgets/greetings_widget.dart';
 import 'package:polizen_app/presentation/widgets/text_widget.dart';
 
 class NavBarWidget extends StatelessWidget {
@@ -13,11 +14,7 @@ class NavBarWidget extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
 
         children: [
-          HeadingWidget(
-            'Guten Morgen',
-            fontsize: FontSizes.large,
-            weight: FontWeight.w700,
-          ),
+          GreetingsWidget(),
           Container(
             padding: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
             decoration: BoxDecoration(

@@ -9,16 +9,19 @@
 // coverage:ignore-file
 
 // ignore_for_file: no_leading_underscores_for_library_prefixes
-import 'package:auto_route/auto_route.dart' as _i3;
-import 'package:flutter/material.dart' as _i4;
+import 'package:auto_route/auto_route.dart' as _i4;
+import 'package:flutter/material.dart' as _i5;
 import 'package:polizen_app/presentation/pages/detail/view/detail_page.dart'
     as _i1;
-import 'package:polizen_app/presentation/pages/home/view/home_page.dart' as _i2;
+import 'package:polizen_app/presentation/pages/01_home/view/home_page.dart'
+    as _i2;
+import 'package:polizen_app/presentation/pages/player/view/player_page.dart'
+    as _i3;
 
 /// generated route for
 /// [_i1.DetailPage]
-class DetailRoute extends _i3.PageRouteInfo<DetailRouteArgs> {
-  DetailRoute({_i4.Key? key, List<_i3.PageRouteInfo>? children})
+class DetailRoute extends _i4.PageRouteInfo<DetailRouteArgs> {
+  DetailRoute({_i5.Key? key, List<_i4.PageRouteInfo>? children})
     : super(
         DetailRoute.name,
         args: DetailRouteArgs(key: key),
@@ -27,7 +30,7 @@ class DetailRoute extends _i3.PageRouteInfo<DetailRouteArgs> {
 
   static const String name = 'DetailRoute';
 
-  static _i3.PageInfo page = _i3.PageInfo(
+  static _i4.PageInfo page = _i4.PageInfo(
     name,
     builder: (data) {
       final args = data.argsAs<DetailRouteArgs>(
@@ -41,7 +44,7 @@ class DetailRoute extends _i3.PageRouteInfo<DetailRouteArgs> {
 class DetailRouteArgs {
   const DetailRouteArgs({this.key});
 
-  final _i4.Key? key;
+  final _i5.Key? key;
 
   @override
   String toString() {
@@ -61,8 +64,8 @@ class DetailRouteArgs {
 
 /// generated route for
 /// [_i2.HomePage]
-class HomeRoute extends _i3.PageRouteInfo<HomeRouteArgs> {
-  HomeRoute({_i4.Key? key, List<_i3.PageRouteInfo>? children})
+class HomeRoute extends _i4.PageRouteInfo<HomeRouteArgs> {
+  HomeRoute({_i5.Key? key, List<_i4.PageRouteInfo>? children})
     : super(
         HomeRoute.name,
         args: HomeRouteArgs(key: key),
@@ -71,7 +74,7 @@ class HomeRoute extends _i3.PageRouteInfo<HomeRouteArgs> {
 
   static const String name = 'HomeRoute';
 
-  static _i3.PageInfo page = _i3.PageInfo(
+  static _i4.PageInfo page = _i4.PageInfo(
     name,
     builder: (data) {
       final args = data.argsAs<HomeRouteArgs>(
@@ -85,7 +88,7 @@ class HomeRoute extends _i3.PageRouteInfo<HomeRouteArgs> {
 class HomeRouteArgs {
   const HomeRouteArgs({this.key});
 
-  final _i4.Key? key;
+  final _i5.Key? key;
 
   @override
   String toString() {
@@ -101,4 +104,20 @@ class HomeRouteArgs {
 
   @override
   int get hashCode => key.hashCode;
+}
+
+/// generated route for
+/// [_i3.PlayerPage]
+class PlayerRoute extends _i4.PageRouteInfo<void> {
+  const PlayerRoute({List<_i4.PageRouteInfo>? children})
+    : super(PlayerRoute.name, initialChildren: children);
+
+  static const String name = 'PlayerRoute';
+
+  static _i4.PageInfo page = _i4.PageInfo(
+    name,
+    builder: (data) {
+      return const _i3.PlayerPage();
+    },
+  );
 }

@@ -7,5 +7,6 @@ class AppRouter extends RootStackRouter {
   List<AutoRoute> get routes => [
     AutoRoute(page: DetailRoute.page),
     AutoRoute(page: HomeRoute.page, initial: true),
+    AutoRoute(page: PlayerRoute.page),
   ];
 }
