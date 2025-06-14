@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
           seedColor: Colors.blue,
           brightness: Brightness.dark,
         ),
-        fontFamily: 'Muslish',
+        fontFamily: 'Mulish',
       ),
     );
   }

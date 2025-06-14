@@ -11,10 +11,10 @@
 // ignore_for_file: no_leading_underscores_for_library_prefixes
 import 'package:auto_route/auto_route.dart' as _i4;
 import 'package:flutter/material.dart' as _i5;
-import 'package:polizen_app/presentation/pages/detail/view/detail_page.dart'
-    as _i1;
 import 'package:polizen_app/presentation/pages/01_home/view/home_page.dart'
     as _i2;
+import 'package:polizen_app/presentation/pages/detail/view/detail_page.dart'
+    as _i1;
 import 'package:polizen_app/presentation/pages/player/view/player_page.dart'
     as _i3;
 
@@ -108,16 +108,44 @@ class HomeRouteArgs {
 
 /// generated route for
 /// [_i3.PlayerPage]
-class PlayerRoute extends _i4.PageRouteInfo<void> {
-  const PlayerRoute({List<_i4.PageRouteInfo>? children})
-    : super(PlayerRoute.name, initialChildren: children);
+class PlayerRoute extends _i4.PageRouteInfo<PlayerRouteArgs> {
+  PlayerRoute({_i5.Key? key, List<_i4.PageRouteInfo>? children})
+    : super(
+        PlayerRoute.name,
+        args: PlayerRouteArgs(key: key),
+        initialChildren: children,
+      );
 
   static const String name = 'PlayerRoute';
 
   static _i4.PageInfo page = _i4.PageInfo(
     name,
     builder: (data) {
-      return const _i3.PlayerPage();
+      final args = data.argsAs<PlayerRouteArgs>(
+        orElse: () => const PlayerRouteArgs(),
+      );
+      return _i3.PlayerPage(key: args.key);
     },
   );
+}
+
+class PlayerRouteArgs {
+  const PlayerRouteArgs({this.key});
+
+  final _i5.Key? key;
+
+  @override
+  String toString() {
+    return 'PlayerRouteArgs{key: $key}';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    if (identical(this, other)) return true;
+    if (other is! PlayerRouteArgs) return false;
+    return key == other.key;
+  }
+
+  @override
+  int get hashCode => key.hashCode;
 }

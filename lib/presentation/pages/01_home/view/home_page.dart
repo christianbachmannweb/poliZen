@@ -4,6 +4,7 @@ import 'package:polizen_app/core/routes/app_router.gr.dart';
 import 'package:polizen_app/data/models/blog_model.dart';
 import 'package:polizen_app/presentation/pages/01_home/widgets/blogteaser_widget.dart';
 import 'package:polizen_app/presentation/pages/01_home/widgets/homepage_btn_row_widget.dart';
+import 'package:polizen_app/presentation/pages/player/view/player_page.dart';
 import 'package:polizen_app/presentation/widgets/navbar_widget.dart';
 import 'package:polizen_app/presentation/widgets/text_widget.dart';
 
@@ -68,9 +69,11 @@ class HomePage extends StatelessWidget {
                     icon1: Icons.start,
                     icon2: Icons.safety_check,
                     onPressed2: () {
+                      debugPrint('Tapped: Einführung');
                       context.pushRoute(PlayerRoute());
                     },
                     onPressed1: () {
+                      debugPrint('Tapped: Einführung');
                       context.pushRoute(PlayerRoute());
                     },
                   ),
