@@ -9,6 +9,7 @@ import 'package:polizen_app/core/theme/constants/colors.dart';
 import 'package:polizen_app/core/theme/typography.dart';
 import 'package:polizen_app/data/models/meditation_model.dart';
 import 'package:polizen_app/presentation/pages/player/widgets/make_dismissable_widget.dart';
+import 'package:polizen_app/presentation/pages/player/widgets/modals/show_info_modal.dart';
 
 @RoutePage()
 class PlayerPage extends StatefulWidget {
@@ -221,7 +222,7 @@ class _PlayerPageState extends State<PlayerPage> {
                   child: SvgPicture.asset('assets/icons/mynaui_download.svg'),
                 ),
                 GestureDetector(
-                  onTap: () {},
+                  onTap: () => showInfoModal(context),
                   child: SvgPicture.asset('assets/icons/information-icon.svg'),
                 ),
               ],
