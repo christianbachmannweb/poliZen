@@ -6,8 +6,8 @@ class HomePageBtnRowWidget extends StatelessWidget {
     super.key,
     required this.btn1,
     required this.btn2,
-    required this.onPressed1,
-    required this.onPressed2,
+    required this.onTapped1,
+    required this.onTapped2,
 
     required this.icon1,
     required this.icon2,
@@ -16,8 +16,8 @@ class HomePageBtnRowWidget extends StatelessWidget {
   final String btn2;
   final IconData icon1;
   final IconData icon2;
-  final VoidCallback onPressed1;
-  final VoidCallback onPressed2;
+  final VoidCallback onTapped1;
+  final VoidCallback onTapped2;
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +29,7 @@ class HomePageBtnRowWidget extends StatelessWidget {
             child: HomepageBtnWidget(
               title: btn1,
               icon: icon1,
-              onPressed: onPressed1,
+              onTapped: onTapped1,
             ),
           ),
           const SizedBox(width: 16),
@@ -37,7 +37,7 @@ class HomePageBtnRowWidget extends StatelessWidget {
             child: HomepageBtnWidget(
               title: btn2,
               icon: icon2,
-              onPressed: onPressed2,
+              onTapped: onTapped2,
             ),
           ),
         ],

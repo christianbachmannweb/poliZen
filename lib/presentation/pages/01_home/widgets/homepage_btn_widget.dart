@@ -4,19 +4,19 @@ import 'package:polizen_app/presentation/widgets/text_widget.dart';
 class HomepageBtnWidget extends StatelessWidget {
   final String title;
   final IconData icon;
-  final VoidCallback onPressed;
+  final VoidCallback onTapped;
 
   const HomepageBtnWidget({
     super.key,
     required this.title,
     required this.icon,
-    required this.onPressed,
+    required this.onTapped,
   });
 
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: onPressed,
+      onTap: onTapped,
       child: Container(
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(16),

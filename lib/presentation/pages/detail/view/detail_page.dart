@@ -142,12 +142,12 @@ class DetailPage extends StatelessWidget {
                   },
 
                   child: Container(
-                    child: Icon(Icons.arrow_back, color: Colors.white),
                     padding: EdgeInsets.all(5),
                     decoration: BoxDecoration(
                       color: Colors.black.withAlpha(90),
                       borderRadius: BorderRadius.circular(200),
                     ),
+                    child: Icon(Icons.arrow_back, color: Colors.white),
                   ),
                 ),
               ),

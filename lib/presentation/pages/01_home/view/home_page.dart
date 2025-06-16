@@ -4,7 +4,6 @@ import 'package:polizen_app/core/routes/app_router.gr.dart';
 import 'package:polizen_app/data/models/blog_model.dart';
 import 'package:polizen_app/presentation/pages/01_home/widgets/blogteaser_widget.dart';
 import 'package:polizen_app/presentation/pages/01_home/widgets/homepage_btn_row_widget.dart';
-import 'package:polizen_app/presentation/pages/player/view/player_page.dart';
 import 'package:polizen_app/presentation/widgets/navbar_widget.dart';
 import 'package:polizen_app/presentation/widgets/text_widget.dart';
 
@@ -68,11 +67,11 @@ class HomePage extends StatelessWidget {
                     btn2: 'Akzeptanz',
                     icon1: Icons.start,
                     icon2: Icons.safety_check,
-                    onPressed2: () {
+                    onTapped1: () {
                       debugPrint('Tapped: Einführung');
                       context.pushRoute(PlayerRoute());
                     },
-                    onPressed1: () {
+                    onTapped2: () {
                       debugPrint('Tapped: Einführung');
                       context.pushRoute(PlayerRoute());
                     },
@@ -82,10 +81,10 @@ class HomePage extends StatelessWidget {
                     btn2: 'Stärken',
                     icon1: Icons.center_focus_strong,
                     icon2: Icons.man_2,
-                    onPressed2: () {
+                    onTapped1: () {
                       context.pushRoute(PlayerRoute());
                     },
-                    onPressed1: () {
+                    onTapped2: () {
                       context.pushRoute(PlayerRoute());
                     },
                   ),
@@ -94,10 +93,10 @@ class HomePage extends StatelessWidget {
                     btn2: 'Action',
                     icon1: Icons.psychology_alt,
                     icon2: Icons.rocket,
-                    onPressed2: () {
+                    onTapped1: () {
                       context.pushRoute(PlayerRoute());
                     },
-                    onPressed1: () {
+                    onTapped2: () {
                       context.pushRoute(PlayerRoute());
                     },
                   ),
