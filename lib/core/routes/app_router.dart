@@ -8,5 +8,6 @@ class AppRouter extends RootStackRouter {
     AutoRoute(page: DetailRoute.page),
     AutoRoute(page: HomeRoute.page, initial: true),
     AutoRoute(page: PlayerRoute.page),
+    AutoRoute(page: PreMeditationRoute.page),
   ];
 }

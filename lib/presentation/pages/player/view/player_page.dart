@@ -8,7 +8,6 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:polizen_app/core/theme/constants/colors.dart';
 import 'package:polizen_app/core/theme/typography.dart';
 import 'package:polizen_app/data/models/meditation_model.dart';
-import 'package:polizen_app/presentation/pages/player/widgets/make_dismissable_widget.dart';
 import 'package:polizen_app/presentation/pages/player/widgets/modals/show_info_modal.dart';
 
 @RoutePage()
@@ -160,8 +159,6 @@ class _PlayerPageState extends State<PlayerPage> {
                           const SizedBox(width: 24),
                           GestureDetector(
                             onTap: () async {
-                              final newPosition =
-                                  position + Duration(seconds: 15);
                               await audioPlayer.seek(
                                 position + Duration(seconds: 15) < duration
                                     ? position + Duration(seconds: 15)

@@ -68,12 +68,10 @@ class HomePage extends StatelessWidget {
                     icon1: Icons.start,
                     icon2: Icons.safety_check,
                     onTapped1: () {
-                      debugPrint('Tapped: Einführung');
                       context.pushRoute(PlayerRoute());
                     },
                     onTapped2: () {
-                      debugPrint('Tapped: Einführung');
-                      context.pushRoute(PlayerRoute());
+                      context.pushRoute(PreMeditationRoute());
                     },
                   ),
                   HomePageBtnRowWidget(

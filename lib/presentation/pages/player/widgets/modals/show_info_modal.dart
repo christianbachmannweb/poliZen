@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:polizen_app/core/theme/typography.dart';
 import 'package:polizen_app/presentation/pages/player/widgets/make_dismissable_widget.dart';
