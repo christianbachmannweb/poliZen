@@ -1,17 +1,10 @@
-# polizen_app
+# poliZenApp
 
-A new Flutter project.
+## About PoliZen
 
-## Getting Started
+### Audience
+PoliZen is designed for police and rescue units, so that they keep calm in highly stressful environments. The idea is that, through practicing certain mental models, meditation techniques and breathing techniques, be more present in highly stressful environments and therefore able to generate more brain capacitiy. That means, if you are more present in a highly stressful situation, you are able to recognize more of the things that you learned and see more things that potentially threaten you. High focus may good in Sports or extremly important single tasks. In a highly dynamic environment, its more important to have a wide attention span and enough brain capacity to handle multiple threats. Obviously, as a "normal" Person that don't have to face highly stressful situations, you can use PoliZen too. You will see some changes in your behavior. 
 
-This project is a starting point for a Flutter application.
+You can reach the poliZen Website here: https://polizen.app 
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-# poliZen
