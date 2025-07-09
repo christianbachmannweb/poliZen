@@ -8,3 +8,19 @@ PoliZen is designed for police and rescue units, so that they keep calm in highl
 You can reach the poliZen Website here: https://polizen.app 
 
 
+
+## The Log
+
+### Short intorduction
+
+This ist the first app i build. I build the app in Flutter. I asked a guy on TikTok, I followed if he can help me with that project. He is a senior developer and gave me mentored support. I explained the idea an he was directly "invested". That mentored support cost 60 Euro per hour. So I have costs up front. But it was every penny worth it. After 8 Sessions we build the Layout and foundation of the app. 
+Between the sessions i learned dart and flutter via Udemy. In the beginning i felt totally stupid. But the more i learned the more I saw the progress and was able to connecting the dots. 
+
+### Beginn
+
+< 20' May: 
+- I installed dart and flutter on my Mac. 
+
+
+
+
